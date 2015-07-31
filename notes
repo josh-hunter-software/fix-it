@@ -1,0 +1,52 @@
+Tables
+Users: name, email, phone, address, units
+units: serial_number, model_number
+parts: name, number, model_numbers
+models: number
+
+Relationships
+units have one installation
+units have one registration
+units have many contractors
+units have many parts
+units have one warranty
+units have one model
+parts have many units
+warranties have many units
+contractors have one address
+contractors have many units
+contractors have many installations
+installations have one contractor
+models have many units
+models have one installation(the correct one)
+
+
+Roles
+roles include consumer, contractor, support, manager, admin
+
+consumer
+-registers the product
+-submits photos
+
+contractor
+consumer abilities plus
+-fills out installation details
+-fills out contact details for their company
+-troubleshoots
+-calculates btu/sizing
+-orders parts
+
+support
+contractor abilities plus
+-escalation
+
+manager
+support abilities plus
+-warranty decisions
+
+admin
+manager abilities plus
+-user permissions
+
+how many people were arrested without incident per cop
+
